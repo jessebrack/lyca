@@ -26,5 +26,14 @@
     },
     "bugs": {
         "url": "https://github.com/jessebrack/lyca/issues"
+    },
+    "dependencies": {
+        "styled-system": "^4.0.1"
+    },
+    "peerDependencies": {
+        "styled-components": "4.0.0"
+    },
+    "devDependencies": {
+        "react": "^16.8.4"
     }
 }
