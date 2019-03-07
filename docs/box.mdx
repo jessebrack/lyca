@@ -1,0 +1,51 @@
+---
+name: Box
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz';
+import { Box } from '../src';
+
+# Box
+
+Primitive layout component.
+
+## Standard
+
+<Playground>
+    <Box>Text inside a box</Box>
+</Playground>
+
+## Background Colors
+
+<Playground>
+    <Box bg="pink">My container is pink!</Box>
+</Playground>
+
+## Different Widths
+
+<Playground>
+    <Box width={1 / 3} bg="pink">
+        1/3
+    </Box>
+    <Box width={2 / 3} bg="pink">
+        2/3
+    </Box>
+    <Box width={3 / 3} bg="pink">
+        3/3
+    </Box>
+</Playground>
+
+## Spacing
+
+<Playground>
+    <Box p={1} my={1} bg="pink">
+        Hello.
+    </Box>
+    <Box p={2} my={2} bg="pink">
+        How are you?
+    </Box>
+    <Box p={3} my={3} bg="pink">
+        Great, thank you.
+    </Box>
+</Playground>
