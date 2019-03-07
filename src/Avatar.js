@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImageAlt from './ImageAlt';
+import Image from './Image';
 
 const Avatar = ({ image, alt, ...props }) => (
-    <ImageAlt
+    <Image
         src={image}
         alt={alt}
         size="100px"

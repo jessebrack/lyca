@@ -18,6 +18,8 @@
     "scripts": {
         "prepare": "npm run clean && babel src -d dist",
         "clean": "rm -rf dist",
+        "docs": "docz dev",
+        "docs:build": "docz build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Jesse Brack",
@@ -41,6 +43,11 @@
         "@babel/preset-env": "^7.3.4",
         "@babel/preset-react": "^7.0.0",
         "babel-core": "^6.26.3",
-        "react": "^16.8.4"
+        "docz": "^0.13.7",
+        "docz-theme-default": "^0.13.7",
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4",
+        "styled-components": "^4.1.3",
+        "styled-normalize": "^8.0.6"
     }
 }
