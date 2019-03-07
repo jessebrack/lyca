@@ -3,6 +3,18 @@
     "version": "1.0.0",
     "description": "Primitive UI elements for component-based design",
     "main": "index.js",
+    "keywords": [
+        "lyca",
+        "npm",
+        "puppies4life",
+        "components",
+        "react",
+        "ui",
+        "design-system",
+        "styled-system",
+        "styled-components",
+        "primitives"
+    ],
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
