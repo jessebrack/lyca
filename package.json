@@ -7,9 +7,12 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Jesse Brack",
-    "license": "ISC",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "https://github.com/jessebrack/lyca"
+    },
+    "bugs": {
+        "url": "https://github.com/jessebrack/lyca/issues"
     }
 }
