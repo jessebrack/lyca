@@ -1,0 +1,25 @@
+---
+name: Container
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz';
+import { Box, Container } from '../src';
+
+# Container
+
+## Standard
+
+<Playground>
+    <Container>
+        <Box bg="pink">I'm contained!</Box>
+    </Container>
+</Playground>
+
+## Responsive
+
+<Playground>
+    <Container maxWidth={[0, 1, 2]}>
+        <Box bg="pink">I'm contained but responsive!</Box>
+    </Container>
+</Playground>

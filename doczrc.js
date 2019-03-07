@@ -1,5 +1,5 @@
 export default {
-    title: 'Grizzly Food',
+    title: 'Lyca',
     description: 'This is my awesome documentation',
     src: './docs',
     wrapper: 'docs/wrapper',
