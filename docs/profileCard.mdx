@@ -1,22 +1,23 @@
 ---
 name: Profile Card
-menu: Components
+menu: Recipes
 ---
 
 import { Playground, PropsTable } from 'docz';
-import { ProfileCard } from '../src';
+import { Avatar, Card, Heading, Text } from '../src';
 
 # Profile Card
 
-Component for displaying user profiles.
-
-## Standard
+Application specific component for showing a user's avatar and profile information.
 
 <Playground>
-    <ProfileCard
-        image="http://tachyons.io/img/avatar_1.jpg"
-        alt="Image of a blepping cat"
-        name="Grizzly B."
-        title="CBO (Chief Barking Officer)"
-    />
+    <Card textAlign="center">
+        <Avatar
+            src="https://placedog.net/500/500"
+            alt="Sir Barksalot"
+            mx="auto"
+        />
+        <Heading my={1}>Sir Barksalot</Heading>
+        <Text my={0}>CBO (Chief Barking Officer)</Text>
+    </Card>
 </Playground>
