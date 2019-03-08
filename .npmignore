@@ -3,3 +3,5 @@ docs
 .docz
 babel.config.js
 doczrc.js
+.rollup.config.js
+.yarn-error.log
