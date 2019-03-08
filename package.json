@@ -1,8 +1,9 @@
 {
     "name": "@puppies4life/lyca",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Primitive UI elements for component-based design",
-    "main": "dist/index.js",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
     "keywords": [
         "lyca",
         "npm",
@@ -16,8 +17,7 @@
         "primitives"
     ],
     "scripts": {
-        "roll": "rollup --config",
-        "prepare": "npm run clean && babel src -d dist",
+        "prepare": "npm run clean && rollup --config",
         "clean": "rm -rf dist",
         "docs": "docz dev",
         "docs:build": "docz build",
