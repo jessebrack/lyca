@@ -19,8 +19,7 @@
         "prepare": "npm run clean && babel src -d dist",
         "clean": "rm -rf dist",
         "docs": "docz dev",
-        "docs:build": "docz build",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "docs:build": "docz build"
     },
     "author": "Jesse Brack",
     "license": "MIT",
