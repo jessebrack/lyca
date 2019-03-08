@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { space, width, color, textAlign } from 'styled-system';
 
 const Box = styled.div`
+	display: none !important;
 	${color}
 	${space}
 	${textAlign}
