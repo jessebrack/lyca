@@ -12,6 +12,7 @@ export const theme = {
         accentDark: '#3c415e',
         gray: '#888',
         border: '#ddd',
+        text: '#111',
         link: 'blue',
         linkHover: 'red',
     },

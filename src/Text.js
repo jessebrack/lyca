@@ -28,4 +28,8 @@ Text.propTypes = {
     ...textAlign.propTypes,
 };
 
+Text.defaultProps = {
+    color: 'text',
+};
+
 export default Text;
