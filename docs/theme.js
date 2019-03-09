@@ -1,3 +1,5 @@
+import { darken, lighten } from 'polished';
+
 /* eslint-disable */
 // Theme file that houses design tokens
 
@@ -6,16 +8,32 @@ const space = [0, 4, 8, 16, 32, 64, 128, 160, 256, 512];
 const colors = {
     // Primary Colors
     black: '#151515',
-    white: '#fff',
-    red: 'red',
-    green: 'green',
-    blue: 'blue',
+    white: '#FFF',
+    gray: '#CCC',
+    red: '#f47c7c',
+    lightRed: lighten(0.06, '#f47c7c'),
+    darkRed: darken(0.55, '#f47c7c'),
+    green: '#a1de93',
+    lightGreen: lighten(0.06, '#a1de93'),
+    darkGreen: darken(0.55, '#a1de93'),
+    blue: '#70a1d7',
+    yellow: '#f7f48b',
     // Element colors
-    primary: 'hotpink',
-    text: '#111',
-    link: 'blue',
-    linkHover: 'red',
-    border: '#ddd',
+    get primary() {
+        return this.red;
+    },
+    get text() {
+        return this.black;
+    },
+    get link() {
+        return this.primary;
+    },
+    get linkHover() {
+        return this.black;
+    },
+    get border() {
+        return this.gray;
+    },
 };
 
 const colorStyles = {
@@ -33,6 +51,10 @@ const colorStyles = {
         color: colors.white,
         bgColor: colors.primary,
         bgColorHover: colors.black,
+    },
+    success: {
+        color: colors.white,
+        bgColor: colors.green,
     },
 };
 
@@ -71,6 +93,7 @@ const lineHeights = {
 };
 
 const borders = {
+    none: 'none',
     normal: '1px solid',
 };
 

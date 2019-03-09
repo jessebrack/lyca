@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import { space, width, color, textAlign } from 'styled-system';
+import { borderRadius, space, width, color, textAlign } from 'styled-system';
 
 const Box = styled.div`
+	${borderRadius}
 	${color}
 	${space}
 	${textAlign}
@@ -9,6 +10,7 @@ const Box = styled.div`
 `;
 
 Box.propTypes = {
+    ...borderRadius,
     ...color.propTypes,
     ...space.propTypes,
     ...textAlign.propTypes,

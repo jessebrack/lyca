@@ -1,0 +1,34 @@
+---
+name: Banner
+menu: Recipes
+---
+
+import { Playground, PropsTable } from 'docz';
+import { Box, Card, Flex, Text } from '../src';
+
+# Banner
+
+Medium level component for displaying information within a banner.
+
+<Playground>
+    <Box bg="lightGreen" py={3} px={4} mb={3} color="darkGreen">
+        <Text fontSize={4} my={0}>
+            Congratulations!
+        </Text>
+        <Text mt={2} mb={0}>
+            You've been accepted into the early access program.
+        </Text>
+        <Flex />
+    </Box>
+
+    <Box bg="lightRed" py={3} px={4} color="darkRed">
+        <Text fontSize={4} my={0}>
+            Uh oh!
+        </Text>
+        <Text mt={2} mb={0}>
+            Something went wrong, sorry.
+        </Text>
+        <Flex />
+    </Box>
+
+</Playground>
