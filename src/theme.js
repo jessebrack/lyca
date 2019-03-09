@@ -63,10 +63,12 @@ const colorStyles = {
     success: {
         color: colors.darkGreen,
         bgColor: colors.lightGreen,
+        bgColorHover: colors.green,
     },
     failure: {
         color: colors.darkRed,
         bgColor: colors.lightRed,
+        bgColorHover: colors.red,
     },
 };
 
@@ -116,6 +118,29 @@ const radii = {
 
 const maxWidths = ['40em', '52em', '64em', '80em'];
 
+// @Variants
+
+const boxPadding = {
+    small: {
+        paddingTop: `${space[1]}px`,
+        paddingBottom: `${space[1]}px`,
+        paddingLeft: `${space[2]}px`,
+        paddingRight: `${space[2]}px`,
+    },
+    medium: {
+        paddingTop: `${space[2]}px`,
+        paddingBottom: `${space[2]}px`,
+        paddingLeft: `${space[3]}px`,
+        paddingRight: `${space[3]}px`,
+    },
+    large: {
+        paddingTop: `${space[3]}px`,
+        paddingBottom: `${space[3]}px`,
+        paddingLeft: `${space[4]}px`,
+        paddingRight: `${space[4]}px`,
+    },
+};
+
 const theme = {
     space,
     colors,
@@ -128,6 +153,8 @@ const theme = {
     borders,
     radii,
     maxWidths,
+    // Variants
+    boxPadding,
 };
 
 export default theme;

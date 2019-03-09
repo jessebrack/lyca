@@ -19,19 +19,21 @@ Primitive layout component.
 ## Background Colors
 
 <Playground>
-    <Box bg="pink">My container is pink!</Box>
+    <Box bg="lightGreen">My container has a background color</Box>
+    <Box bg="lightBlue">My container has a background color</Box>
+    <Box bg="lightRed">My container has a background color</Box>
 </Playground>
 
 ## Different Widths
 
 <Playground>
-    <Box width={1 / 3} bg="pink">
+    <Box width={1 / 3} bg="lightGreen">
         1/3
     </Box>
-    <Box width={2 / 3} bg="pink">
+    <Box width={2 / 3} bg="lightBlue">
         2/3
     </Box>
-    <Box width={3 / 3} bg="pink">
+    <Box width={3 / 3} bg="lightRed">
         3/3
     </Box>
 </Playground>
@@ -39,13 +41,45 @@ Primitive layout component.
 ## Spacing
 
 <Playground>
-    <Box p={1} my={1} bg="pink">
+    <Box p={1} my={1} bg="lightGreen">
         Hello.
     </Box>
-    <Box p={2} my={2} bg="pink">
+    <Box p={2} my={2} bg="lightGreen" borderRadius={5}>
         How are you?
     </Box>
-    <Box p={3} my={3} bg="pink">
+    <Box p={3} my={3} bg="lightGreen">
         Great, thank you.
     </Box>
 </Playground>
+
+## Responsive
+
+<Playground>
+    <Box p={3} bg={['lightRed', 'lightBlue', 'lightGreen']}>
+        Shrink your browser!
+    </Box>
+</Playground>
+
+## Props
+
+| Prop      | Type                     | Required | Description                                          |
+| :-------- | :----------------------- | :------- | :--------------------------------------------------- |
+| width     | Number, String, or Array | No       | Width of box                                         |
+| p         | Number, String, or Array | No       | Shorthand padding                                    |
+| pt        | Number, String, or Array | No       | Padding top                                          |
+| pr        | Number, String, or Array | No       | Padding right                                        |
+| pl        | Number, String, or Array | No       | Padding left                                         |
+| pb        | Number, String, or Array | No       | Padding bottom                                       |
+| px        | Number, String, or Array | No       | Horizontal padding                                   |
+| py        | Number, String, or Array | No       | Vertical padding                                     |
+| m         | Number, String, or Array | No       | Shorthand margin                                     |
+| mt        | Number, String, or Array | No       | Margin top                                           |
+| mr        | Number, String, or Array | No       | Margin right                                         |
+| ml        | Number, String, or Array | No       | Margin left                                          |
+| mb        | Number, String, or Array | No       | Margin bottom                                        |
+| mx        | Number, String, or Array | No       | Horizontal margin                                    |
+| my        | Number, String, or Array | No       | Vertical margin                                      |
+| my        | Number, String, or Array | No       | Vertical margin                                      |
+| my        | Number, String, or Array | No       | Vertical margin                                      |
+| color     | String or Array          | No       | Sets color of children who inherit from their parent |
+| textAlign | String or Array          | No       | Aligns child inline elements                         |
