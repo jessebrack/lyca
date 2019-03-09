@@ -7,15 +7,17 @@ const Button = styled.button`
     display: inline-block;
     text-align: center;
 
-    background-color: ${themeGet('colors.accent', '#111')};
-    border-radius: ${themeGet('radii.normal', '0')};
-    color: ${themeGet('colors.white', '#fff')};
+    background-color: ${themeGet('colorStyles.textOnPrimary.bgColor')};
+    border-radius: ${themeGet('radii.normal')};
+    color: ${themeGet('colorStyles.textOnPrimary.color')};
     cursor: ${props => (props.disabled ? null : 'pointer')};
 
     &:hover,
     &:focus {
         background-color: ${props =>
-            props.disabled ? null : themeGet('colors.accentDark', '#000')};
+            props.disabled
+                ? null
+                : themeGet('colorStyles.textOnPrimary.bgColorHover')};
     }
 
     &:disabled {

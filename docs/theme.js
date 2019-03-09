@@ -4,16 +4,36 @@
 const space = [0, 4, 8, 16, 32, 64, 128, 160, 256, 512];
 
 const colors = {
+    // Primary Colors
     black: '#151515',
     white: '#fff',
-    yellow: '#f8ed69',
-    accent: '#738598',
-    accentDark: '#3c415e',
-    gray: '#888',
-    border: '#ddd',
+    red: 'red',
+    green: 'green',
+    blue: 'blue',
+    // Element colors
+    primary: 'hotpink',
     text: '#111',
     link: 'blue',
     linkHover: 'red',
+    border: '#ddd',
+};
+
+const colorStyles = {
+    textOnDark: {
+        color: colors.white,
+        bgColor: colors.black,
+        bgColorHover: colors.black,
+    },
+    textOnLight: {
+        color: colors.black,
+        bgColor: colors.white,
+        bgColorHover: colors.black,
+    },
+    textOnPrimary: {
+        color: colors.white,
+        bgColor: colors.primary,
+        bgColorHover: colors.black,
+    },
 };
 
 const fontSizes = [
@@ -64,6 +84,7 @@ const maxWidths = ['40em', '52em', '64em', '80em'];
 const theme = {
     space,
     colors,
+    colorStyles,
     fontSizes,
     fonts,
     fontWeights,
