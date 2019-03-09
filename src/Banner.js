@@ -1,38 +1,3 @@
----
-name: Banner
-menu: Recipes
----
-
-import { Playground, PropsTable } from 'docz';
-import { Box, Card, Text } from '../src';
-import Banner from '../src/Banner';
-
-# Banner
-
-A simplified example of a medium level component for displaying information within a banner.
-
-<Playground>
-    <Banner
-        heading="Take Our Survey"
-        description="Please take a moment to fill out our survey."
-    />
-    <Banner
-        type="success"
-        heading="Congratulations!"
-        description="You've been selected for early access."
-    />
-    <Banner
-        type="failure"
-        heading="Uh oh!"
-        description="Sorry, there was a problem."
-    />
-</Playground>
-
-### Banner.js
-
-One layer lower, showing implementation details
-
-```jsx
 import React from 'react';
 import theme from './theme';
 import { Box, Text } from './';
@@ -45,6 +10,7 @@ const bannerType = {
 
 const Banner = ({ heading, description, type, children, ...props }) => {
     const bannerColor = bannerType[type] || bannerType.default;
+
     return (
         <Box
             bg={bannerColor.bgColor}
@@ -66,4 +32,3 @@ const Banner = ({ heading, description, type, children, ...props }) => {
 };
 
 export default Banner;
-```

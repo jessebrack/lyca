@@ -17,10 +17,18 @@ const colors = {
     lightGreen: lighten(0.06, '#a1de93'),
     darkGreen: darken(0.55, '#a1de93'),
     blue: '#70a1d7',
+    lightBlue: lighten(0.06, '#70a1d7'),
+    darkBlue: darken(0.55, '#70a1d7'),
     yellow: '#f7f48b',
     // Element colors
     get primary() {
-        return this.red;
+        return this.blue;
+    },
+    get darkPrimary() {
+        return this.darkBlue;
+    },
+    get lightPrimary() {
+        return this.lightBlue;
     },
     get text() {
         return this.black;
@@ -48,13 +56,17 @@ const colorStyles = {
         bgColorHover: colors.black,
     },
     textOnPrimary: {
-        color: colors.white,
-        bgColor: colors.primary,
-        bgColorHover: colors.black,
+        color: colors.darkPrimary,
+        bgColor: colors.lightPrimary,
+        bgColorHover: colors.primary,
     },
     success: {
-        color: colors.white,
-        bgColor: colors.green,
+        color: colors.darkGreen,
+        bgColor: colors.lightGreen,
+    },
+    failure: {
+        color: colors.darkRed,
+        bgColor: colors.lightRed,
     },
 };
 

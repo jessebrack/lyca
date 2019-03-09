@@ -10,7 +10,7 @@ const Box = styled.div`
 `;
 
 Box.propTypes = {
-    ...borderRadius,
+    ...borderRadius.propTypes,
     ...color.propTypes,
     ...space.propTypes,
     ...textAlign.propTypes,

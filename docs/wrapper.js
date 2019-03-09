@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import styledNormalize from 'styled-normalize';
-import theme from './theme';
+import theme from '../src/theme';
 
 const GlobalStyle = createGlobalStyle`
 	${styledNormalize}
