@@ -3,7 +3,7 @@ name: Link
 menu: Components
 ---
 
-import { Playground, PropsTable } from 'docz';
+import { Playground } from 'docz';
 import { Link } from '../src';
 
 # Link
@@ -13,5 +13,11 @@ Primitive for displaying links.
 ## Standard
 
 <Playground>
-    <Link>Hey, I'm a link!</Link>
+    <Link href="#">Hey, I'm a link!</Link>
 </Playground>
+
+## Props
+
+| Prop     | Type                     | Required | Description              |
+| :------- | :----------------------- | :------- | :----------------------- |
+| fontSize | Number, String, or Array | No       | Sets `font-size` of link |

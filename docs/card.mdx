@@ -3,15 +3,58 @@ name: Card
 menu: Components
 ---
 
-import { Playground, PropsTable } from 'docz';
-import { Card } from '../src';
+import { Playground } from 'docz';
+import { Card, Flex } from '../src';
 
 # Card
 
 Primitive card UI component.
 
-## Levels
+## Standard
 
 <Playground>
     <Card>This is some text in a card!</Card>
 </Playground>
+
+## Centered Text
+
+<Playground>
+    <Card textAlign="center">Look, I'm centered!</Card>
+</Playground>
+
+## Different Widths
+
+See [Flex](/flex) for more information
+
+<Playground>
+    <Flex>
+        <Card width={1 / 2} mr={2}>
+            This is some text in a card!
+        </Card>
+        <Card width={1 / 2} ml={2}>
+            This is some text in a card!
+        </Card>
+    </Flex>
+</Playground>
+
+## Props
+
+| Prop      | Type                     | Required | Description                       |
+| :-------- | :----------------------- | :------- | :-------------------------------- |
+| width     | Number, String, or Array | No       | Set the width of the card         |
+| color     | String or Array          | No       | Set color of children who inherit |
+| textAlign | String or Array          | No       | Align children                    |
+| p         | Number, String, or Array | No       | Shorthand padding                 |
+| pt        | Number, String, or Array | No       | Padding top                       |
+| pr        | Number, String, or Array | No       | Padding right                     |
+| pl        | Number, String, or Array | No       | Padding left                      |
+| pb        | Number, String, or Array | No       | Padding bottom                    |
+| px        | Number, String, or Array | No       | Horizontal padding                |
+| py        | Number, String, or Array | No       | Vertical padding                  |
+| m         | Number, String, or Array | No       | Shorthand margin                  |
+| mt        | Number, String, or Array | No       | Margin top                        |
+| mr        | Number, String, or Array | No       | Margin right                      |
+| ml        | Number, String, or Array | No       | Margin left                       |
+| mb        | Number, String, or Array | No       | Margin bottom                     |
+| mx        | Number, String, or Array | No       | Horizontal margin                 |
+| my        | Number, String, or Array | No       | Vertical margin                   |

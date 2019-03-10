@@ -8,6 +8,8 @@ import { Button } from '../src';
 
 # Button
 
+Primitive UI element for designating an action to be taken. Defaults to a `button` element.
+
 ## Standard
 
 <Playground>
@@ -17,5 +19,40 @@ import { Button } from '../src';
 ## Disabled
 
 <Playground>
-    <Button disabled>I'm a button!</Button>
+    <Button disabled>I'm not clickable!</Button>
 </Playground>
+
+## Success
+
+<Playground>
+    <Button type="success">I'm a success!</Button>
+</Playground>
+
+## Failure
+
+<Playground>
+    <Button type="failure">I'm a failure :(</Button>
+</Playground>
+
+## Props
+
+| Prop  | Type                     | Required | Description                                                       |
+| :---- | :----------------------- | :------- | :---------------------------------------------------------------- |
+| type  | String                   | No       | Accepts `success` or `failure`, defaults to text on primary color |
+| width | Number, String, or Array | No       | Width of button                                                   |
+| p     | Number, String, or Array | No       | Shorthand padding                                                 |
+| pt    | Number, String, or Array | No       | Padding top                                                       |
+| pr    | Number, String, or Array | No       | Padding right                                                     |
+| pl    | Number, String, or Array | No       | Padding left                                                      |
+| pb    | Number, String, or Array | No       | Padding bottom                                                    |
+| px    | Number, String, or Array | No       | Horizontal padding                                                |
+| py    | Number, String, or Array | No       | Vertical padding                                                  |
+| m     | Number, String, or Array | No       | Shorthand margin                                                  |
+| mt    | Number, String, or Array | No       | Margin top                                                        |
+| mr    | Number, String, or Array | No       | Margin right                                                      |
+| ml    | Number, String, or Array | No       | Margin left                                                       |
+| mb    | Number, String, or Array | No       | Margin bottom                                                     |
+| mx    | Number, String, or Array | No       | Horizontal margin                                                 |
+| my    | Number, String, or Array | No       | Vertical margin                                                   |
+| my    | Number, String, or Array | No       | Vertical margin                                                   |
+| my    | Number, String, or Array | No       | Vertical margin                                                   |

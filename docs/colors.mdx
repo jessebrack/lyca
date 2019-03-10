@@ -1,0 +1,127 @@
+---
+name: Colors
+menu: Foundation
+---
+
+import { Playground, PropsTable } from 'docz';
+import { Box, Flex, Text } from '../src';
+import theme from '../src/theme';
+
+# Colors
+
+## Base
+
+<Flex>
+    <Box textAlign="center" mr={4}>
+        <Box bg="black" size="80px" />
+        <Text>Black</Text>
+    </Box>
+    <Box textAlign="center" mr={4}>
+        <Box bg="white" size="80px" />
+        <Text>White</Text>
+    </Box>
+    <Box textAlign="center">
+        <Box bg="gray" size="80px" />
+        <Text>Gray</Text>
+    </Box>
+</Flex>
+
+## Red
+
+<Flex>
+    <Box textAlign="center" mr={4}>
+        <Box bg="red" size="80px" />
+        <Text>Red</Text>
+    </Box>
+    <Box textAlign="center" mr={4}>
+        <Box bg="lightRed" size="80px" />
+        <Text>Light Red</Text>
+    </Box>
+    <Box textAlign="center">
+        <Box bg="darkRed" size="80px" />
+        <Text>Dark Red</Text>
+    </Box>
+</Flex>
+
+## Green
+
+<Flex>
+    <Box textAlign="center" mr={4}>
+        <Box bg="green" size="80px" />
+        <Text>Green</Text>
+    </Box>
+    <Box textAlign="center" mr={4}>
+        <Box bg="lightGreen" size="80px" />
+        <Text>Light Green</Text>
+    </Box>
+    <Box textAlign="center">
+        <Box bg="darkGreen" size="80px" />
+        <Text>Dark Green</Text>
+    </Box>
+</Flex>
+
+## Blue
+
+<Flex>
+    <Box textAlign="center" mr={4}>
+        <Box bg="blue" size="80px" />
+        <Text>Blue</Text>
+    </Box>
+    <Box textAlign="center" mr={4}>
+        <Box bg="lightBlue" size="80px" />
+        <Text>Light Blue</Text>
+    </Box>
+    <Box textAlign="center">
+        <Box bg="darkBlue" size="80px" />
+        <Text>Dark Blue</Text>
+    </Box>
+</Flex>
+
+## Elements
+
+<Flex>
+    <Box textAlign="center" mr={4}>
+        <Box bg="primary" size="80px" />
+        <Text>Primary</Text>
+    </Box>
+    <Box textAlign="center" mr={4}>
+        <Box bg="lightPrimary" size="80px" />
+        <Text>Light Primary</Text>
+    </Box>
+    <Box textAlign="center" mr={4}>
+        <Box bg="darkPrimary" size="80px" />
+        <Text>Dark Primary</Text>
+    </Box>
+    <Box textAlign="center" mr={4}>
+        <Box bg="text" size="80px" />
+        <Text>Text</Text>
+    </Box>
+    <Box textAlign="center" mr={4}>
+        <Box bg="link" size="80px" />
+        <Text>Link</Text>
+    </Box>
+    <Box textAlign="center">
+        <Box bg="border" size="80px" />
+        <Text>Border</Text>
+    </Box>
+</Flex>
+
+## Color Styles
+
+<Box bg={theme.colorStyles.textOnLight.bgColor} p={4} mb={4}>
+	<Text color={theme.colorStyles.textOnLight.color}>Text on light</Text>
+</Box>
+<Box bg={theme.colorStyles.textOnDark.bgColor} p={4} mb={4}>
+	<Text color={theme.colorStyles.textOnDark.color}>Text on dark</Text>
+</Box>
+<Box bg={theme.colorStyles.textOnPrimary.bgColor} p={4} mb={4}>
+	<Text color={theme.colorStyles.textOnPrimary.color}>
+		Text on primary
+	</Text>
+</Box>
+<Box bg={theme.colorStyles.success.bgColor} p={4} mb={4}>
+	<Text color={theme.colorStyles.success.color}>Success</Text>
+</Box>
+<Box bg={theme.colorStyles.failure.bgColor} p={4}>
+	<Text color={theme.colorStyles.failure.color}>Failure</Text>
+</Box>

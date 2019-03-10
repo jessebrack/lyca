@@ -8,15 +8,54 @@ import { Box, Flex } from '../src';
 
 # Flex
 
+Layout component for controlling flex behavior.
+
 ## Standard
 
 <Playground>
     <Flex>
-        <Box bg="pink" width={1 / 2}>
+        <Box bg="lightGreen" width={1 / 2}>
             Flex
         </Box>
-        <Box bg="aqua" width={1 / 2}>
+        <Box bg="lightBlue" width={1 / 2}>
             Flex
         </Box>
     </Flex>
 </Playground>
+
+## Responsive
+
+<Playground>
+    <Flex flexDirection={['column', 'row']}>
+        <Box bg="lightGreen" width={1}>
+            Resize
+        </Box>
+        <Box bg="lightBlue" width={1}>
+            Browser
+        </Box>
+    </Flex>
+</Playground>
+
+## Props
+
+| Prop           | Type                     | Required | Description                  |
+| :------------- | :----------------------- | :------- | :--------------------------- |
+| alignItems     | String or Array          | No       | Sets `align-items`           |
+| justifyContent | String or Array          | No       | Sets `justify-content`       |
+| flexDirection  | String or Array          | No       | Sets `flex-direction`        |
+| flexWrap       | String or Array          | No       | Sets `flex-wrap`             |
+| width          | Number, String, or Array | No       | Sets width of flex container |
+| p              | Number, String, or Array | No       | Shorthand padding            |
+| pt             | Number, String, or Array | No       | Padding top                  |
+| pr             | Number, String, or Array | No       | Padding right                |
+| pl             | Number, String, or Array | No       | Padding left                 |
+| pb             | Number, String, or Array | No       | Padding bottom               |
+| px             | Number, String, or Array | No       | Horizontal padding           |
+| py             | Number, String, or Array | No       | Vertical padding             |
+| m              | Number, String, or Array | No       | Shorthand margin             |
+| mt             | Number, String, or Array | No       | Margin top                   |
+| mr             | Number, String, or Array | No       | Margin right                 |
+| ml             | Number, String, or Array | No       | Margin left                  |
+| mb             | Number, String, or Array | No       | Margin bottom                |
+| mx             | Number, String, or Array | No       | Horizontal margin            |
+| my             | Number, String, or Array | No       | Vertical margin              |

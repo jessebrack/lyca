@@ -4,6 +4,7 @@ export default {
     src: './docs',
     wrapper: 'docs/wrapper',
     codeSandbox: false,
+    menu: ['Getting Started', 'Foundation', 'Components', 'Recipes'],
     themeConfig: {
         showPlaygroundEditor: true,
         styles: {

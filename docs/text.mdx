@@ -8,10 +8,42 @@ import { Text } from '../src';
 
 # Text
 
-Primitive text component for normal text.
+Primitive UI component for text.
 
-## Levels
+## Standard
 
 <Playground>
     <Text>This is some placeholder text.</Text>
 </Playground>
+
+## HTML Element Variations
+
+<Playground>
+    <Text>This outputs text inside a paragraph element</Text>
+    <Text as="span">This outputs text inside a span element</Text>
+    <Text as="div">This outputs text inside a div element</Text>
+</Playground>
+
+## Props
+
+| Prop       | Type                     | Required | Description              |
+| :--------- | :----------------------- | :------- | :----------------------- |
+| color      | String or Array          | No       | Set color of text        |
+| fontSize   | Number, String, or Array | No       | Set font size of text    |
+| fontWeight | Number, String, or Array | No       | Set font weight of text  |
+| lineHeight | Number, String, or Array | No       | Set line height of text  |
+| textAlign  | String or Array          | No       | Set `text-align` of text |
+| p          | Number, String, or Array | No       | Shorthand padding        |
+| pt         | Number, String, or Array | No       | Padding top              |
+| pr         | Number, String, or Array | No       | Padding right            |
+| pl         | Number, String, or Array | No       | Padding left             |
+| pb         | Number, String, or Array | No       | Padding bottom           |
+| px         | Number, String, or Array | No       | Horizontal padding       |
+| py         | Number, String, or Array | No       | Vertical padding         |
+| m          | Number, String, or Array | No       | Shorthand margin         |
+| mt         | Number, String, or Array | No       | Margin top               |
+| mr         | Number, String, or Array | No       | Margin right             |
+| ml         | Number, String, or Array | No       | Margin left              |
+| mb         | Number, String, or Array | No       | Margin bottom            |
+| mx         | Number, String, or Array | No       | Horizontal margin        |
+| my         | Number, String, or Array | No       | Vertical margin          |

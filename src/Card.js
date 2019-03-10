@@ -2,11 +2,9 @@ import styled from 'styled-components';
 import { space, width, color, textAlign, themeGet } from 'styled-system';
 
 const Card = styled.div`
-	background-color: ${themeGet('colors.white')};
 	border: ${themeGet('borders.normal')};
     border-color: ${themeGet('colors.border')};
 	border-radius: ${themeGet('radii.normal')};
-	padding: ${themeGet('space.4')}px;
 
 	${color}
 	${space}
@@ -19,6 +17,10 @@ Card.propTypes = {
     ...space.propTypes,
     ...textAlign.propTypes,
     ...width.propTypes,
+};
+
+Card.defaultProps = {
+    p: 4,
 };
 
 Card.displayName = 'Card';
