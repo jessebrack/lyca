@@ -63,6 +63,19 @@ const GlobalStyle = createGlobalStyle`
 		font-size: ${theme.fontSizes[1]};
 	}
 
+	p {
+		margin-top: 1em;
+		margin-bottom: 1em;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
 	ul {
 		margin-top: 0;
 		padding-left: 0;
