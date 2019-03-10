@@ -1,6 +1,6 @@
 {
     "name": "@puppies4life/lyca",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Primitive UI elements for component-based design",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
