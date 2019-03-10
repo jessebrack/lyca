@@ -8,18 +8,18 @@ import { Box, Container } from '../src';
 
 # Container
 
+Wrapping container component.
+
 ## Standard
 
 <Playground>
     <Container>
-        <Box bg="pink">I'm contained!</Box>
+        <Box bg="lightGreen">I'm contained!</Box>
     </Container>
 </Playground>
 
-## Responsive
+## Props
 
-<Playground>
-    <Container maxWidth={[0, 1, 2]}>
-        <Box bg="pink">I'm contained but responsive!</Box>
-    </Container>
-</Playground>
+| Prop     | Type                     | Required | Description                        |
+| :------- | :----------------------- | :------- | :--------------------------------- |
+| maxWidth | Number, String, or Array | No       | Set the max width of the container |

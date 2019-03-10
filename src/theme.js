@@ -6,16 +6,19 @@ import { darken, lighten } from 'polished';
 const space = [0, 4, 8, 16, 32, 64, 128, 160, 256, 512];
 
 const colors = {
-    // Primary Colors
+    // Base
     black: '#151515',
     white: '#FFF',
     gray: '#CCC',
+    // Red
     red: '#f47c7c',
     lightRed: lighten(0.06, '#f47c7c'),
     darkRed: darken(0.55, '#f47c7c'),
+    // Green
     green: '#a1de93',
     lightGreen: lighten(0.06, '#a1de93'),
     darkGreen: darken(0.55, '#a1de93'),
+    // Blue
     blue: '#70a1d7',
     lightBlue: lighten(0.06, '#70a1d7'),
     darkBlue: darken(0.55, '#70a1d7'),

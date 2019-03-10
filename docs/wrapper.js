@@ -25,6 +25,14 @@ const GlobalStyle = createGlobalStyle`
 	h1, h2, h3, h4, h5, h6 {
 		margin-top: 2em;
 		margin-bottom: 1em;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	h1 {
@@ -58,6 +66,12 @@ const GlobalStyle = createGlobalStyle`
 	ul {
 		margin-top: 0;
 		padding-left: 0;
+	}
+
+	/* Docz specific styling (temporary) */
+
+	#heading {
+		margin-top: 1em;
 	}
 
 `;

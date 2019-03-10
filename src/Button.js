@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { space, width, themeGet, variant } from 'styled-system';
+import { space, width, themeGet } from 'styled-system';
 import { PropTypes } from 'prop-types';
 import theme from './theme';
 
