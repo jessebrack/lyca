@@ -80,13 +80,6 @@ const GlobalStyle = createGlobalStyle`
 		margin-top: 0;
 		padding-left: 0;
 	}
-
-	/* Docz specific styling (temporary) */
-
-	#heading {
-		margin-top: 1em;
-	}
-
 `;
 
 const Wrapper = ({ children }) => (
