@@ -26,13 +26,14 @@ const GlobalStyle = createGlobalStyle`
 		margin-top: 2em;
 		margin-bottom: 1em;
 
-		&:first-child {
+		.react-live-preview &:first-child {
 			margin-top: 0;
 		}
 
-		&:last-child {
+		.react-live-preview &:last-child {
 			margin-bottom: 0;
 		}
+
 	}
 
 	h1 {

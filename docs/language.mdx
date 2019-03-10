@@ -1,0 +1,57 @@
+---
+name: Language
+menu: Foundation
+---
+
+# Language
+
+Creating shared meaning.
+
+## Composition
+
+`(Token) -> (Primitive) -> (Compound) -> ...`
+
+Implementation details reveal themselves the lower you go on the composition scale. The higher you go, the more declaritve elements become.
+
+### Low level
+
+```jsx
+import styled from 'styled-components';
+import { space, width, color, textAlign, themeGet } from 'styled-system';
+
+const Card = styled.div`
+	border: ${themeGet('borders.normal')};
+    border-color: ${themeGet('colors.border')};
+	border-radius: ${themeGet('radii.normal')};
+
+	${color}
+	${space}
+	${textAlign}
+	${width}
+`;
+
+Card.propTypes = {
+    ...color.propTypes,
+    ...space.propTypes,
+    ...textAlign.propTypes,
+    ...width.propTypes,
+};
+
+Card.defaultProps = {
+    p: 4,
+};
+
+Card.displayName = 'Card';
+
+export default Card;
+```
+
+### High level
+
+```jsx
+import { Card } from '@puppies4life/lyca';
+
+<Card>I'm a card!</Card>;
+```
+
+Low level components are simple and singular in nature which makes them highly reusable. High level components are more complex and less reusable.
