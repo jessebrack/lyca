@@ -57,9 +57,7 @@ const Banner = ({ heading, description, type, children, ...props }) => {
             <Text fontSize={4} my={0}>
                 {heading}
             </Text>
-            <Text mt={2} mb={0}>
-                {description}
-            </Text>
+            <Text mt={2}>{description}</Text>
             {children}
         </Box>
     );
