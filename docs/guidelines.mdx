@@ -1,0 +1,68 @@
+---
+name: Guidelines
+menu: Foundation
+---
+
+import { Playground } from 'docz';
+import { Heading, Text } from '../src';
+
+# Guidelines
+
+## Composition
+
+Elements that exist within the Lyca core library should be singular in nature and simple. The simpler a component is, the higher its reusability. Lyca components should not contain other components.
+
+If you were to break down a Lyca component further, it would no longer be useful.
+
+Instead, you should use these primitive UI components to compose more complex components within your application. This gives you the advantage of quickly building components specific to your application with the advantage of being able to reuse your lower level components and not repeating yourself.
+
+### Example composition:
+
+```jsx
+import React from 'react';
+import theme from './theme';
+import { Box, Text } from './';
+
+const bannerType = {
+    success: theme.colorStyles.success,
+    failure: theme.colorStyles.failure,
+    default: theme.colorStyles.textOnPrimary,
+};
+
+const Banner = ({ heading, description, type, children, ...props }) => {
+    const bannerColor = bannerType[type] || bannerType.default;
+    return (
+        <Box
+            bg={bannerColor.bgColor}
+            py={3}
+            px={4}
+            mb={3}
+            color={bannerColor.color}
+            {...props}
+        >
+            <Text fontSize={4} my={0}>
+                {heading}
+            </Text>
+            <Text mt={2}>{description}</Text>
+            {children}
+        </Box>
+    );
+};
+
+export default Banner;
+```
+
+You were able to compose a new component without creating any new CSS, relationships, or duplicate code.
+
+Traditionally, you should have composed your banner like this which created a parent-child relationship:
+
+```css
+.banner
+    .banner__body
+        .banner__title
+        .banner__description
+```
+
+`.banner__body`, `.banner__title`, and `.banner__description` have become unique to `.banner` and cannot be reusued anywhere else in your application even though other elements, such as a card or a panel may have the same stylistic function. Your code has grown in complexity.
+
+The implementation details are hidden at a high level and the user can simply use the `<Banner>` as-is.
