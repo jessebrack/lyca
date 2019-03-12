@@ -3,7 +3,7 @@ name: Profile Card
 menu: Recipes
 ---
 
-import { Playground, PropsTable } from 'docz';
+import { Playground } from 'docz';
 import { Avatar, Card, Heading, Text } from '../src';
 
 # Profile Card
@@ -15,9 +15,9 @@ Application specific component for showing a user's avatar and profile informati
         <Avatar
             src="https://placedog.net/500/500"
             alt="Sir Barksalot"
-            mx="auto"
+            display="inline"
         />
         <Heading my={1}>Sir Barksalot</Heading>
-        <Text my={0}>CBO (Chief Barking Officer)</Text>
+        <Text mt={0}>CBO (Chief Barking Officer)</Text>
     </Card>
 </Playground>
