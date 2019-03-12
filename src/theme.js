@@ -3,6 +3,8 @@ import { darken, lighten } from 'polished';
 /* eslint-disable */
 // Theme file that houses design tokens
 
+const breakpoints = ['40em', '52em', '64em', '80em'];
+
 const space = [0, 4, 8, 16, 32, 64, 128, 160, 256, 512];
 
 const colors = {
